@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "declarationDir": "./dist/@types",
+    "allowSyntheticDefaultImports": true,
+    "allowJs": false,
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "lib": ["esnext", "dom", "dom.iterable",],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "outDir": "dist/",
+    "jsx": "react",
+    "preserveConstEnums": true,
+    "removeComments": false,
+    "rootDir": "./",
+    "sourceMap": false,
+    "strictNullChecks": true,
+    "target": "es2015",
+    "traceResolution": false
+  },
+  "include": ["./src", "./example"],
+  "exclude": ["*.html"]
+}

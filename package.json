@@ -1,20 +1,26 @@
 {
   "name": "useTaroNavBarStyle",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "types": "./dist/@types/src/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "repository": "git@github.com:zhaofinger/useTaroNavBarStyle.git",
   "author": "zhaofinger <zhaohaibo1994@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "parcel build ./src/index.ts --experimental-scope-hoisting"
-  },
-  "dependencies": {
-    "@tarojs/taro": "^3.0.2",
-    "react": "^16.13.1"
+    "build": "parcel build ./src/index.ts"
   },
   "devDependencies": {
     "@types/react": "^16.9.41",
-    "parcel-bundler": "^1.12.4",
-    "typescript": "^3.9.6"
+    "parcel": "^2.0.0-beta.1",
+    "typescript": "^3.9.6",
+    "@tarojs/taro": "^3.0.2",
+    "react": "^16.13.1"
+  },
+  "peerDependencies": {
+    "@tarojs/taro": "^3.0.2",
+    "react": "^16.13.1"
   }
 }
