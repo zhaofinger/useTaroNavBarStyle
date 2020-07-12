@@ -1,6 +1,6 @@
 {
-  "name": "useTaroNavBarStyle",
-  "version": "1.0.0",
+  "name": "use-taro-navbar-style",
+  "version": "0.0.1",
   "main": "./dist/index.js",
   "types": "./dist/@types/src/index.d.ts",
   "files": [
@@ -10,7 +10,8 @@
   "author": "zhaofinger <zhaohaibo1994@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "parcel build ./src/index.ts"
+    "build": "parcel build ./src/index.ts",
+    "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "@types/react": "^16.9.41",

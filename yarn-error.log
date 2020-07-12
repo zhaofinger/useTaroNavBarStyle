@@ -1,0 +1,59 @@
+Arguments: 
+  /Users/haibozhao/.nvm/versions/node/v14.4.0/bin/node /usr/local/Cellar/yarn/1.19.2/libexec/bin/yarn.js
+
+PATH: 
+  /usr/local/opt/icu4c/sbin:/usr/local/opt/icu4c/bin:/anaconda3/bin:/Users/haibozhao/flutter/bin:/opt/local/bin:/usr/local/Cellar/mtr/0.92/sbin/:/Users/haibozhao/.composer/vendor/bin:/usr/local/opt/php@7.2/sbin:/Users/haibozhao/go/bin:/Users/haibozhao/.npm/bin:/Users/haibozhao/anaconda3/bin:/Users/haibozhao/.nvm/versions/node/v14.4.0/bin:/Users/haibozhao/.cargo/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Applications/Wireshark.app/Contents/MacOS:/Applications/Xamarin Workbooks.app/Contents/SharedSupport/path-bin:/Users/haibozhao/Library/Android/sdk/tools:/Users/haibozhao/Library/Android/sdk/platform-tools:/Users/haibozhao/Library/Android/sdk/platform-tools/
+
+Yarn version: 
+  1.19.2
+
+Node version: 
+  14.4.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.npm.taobao.org/@types%2freact: tunneling socket could not be established, cause=socket hang up
+      at ClientRequest.onError (/usr/local/Cellar/yarn/1.19.2/libexec/lib/cli.js:152072:17)
+      at Object.onceWrapper (events.js:422:26)
+      at ClientRequest.emit (events.js:315:20)
+      at Socket.socketOnEnd (_http_client.js:491:9)
+      at Socket.emit (events.js:327:22)
+      at endReadableNT (_stream_readable.js:1224:12)
+      at processTicksAndRejections (internal/process/task_queues.js:84:21)
+
+npm manifest: 
+  {
+    "name": "useTaroNavBarStyle",
+    "version": "0.0.1",
+    "main": "./dist/index.js",
+    "types": "./dist/@types/src/index.d.ts",
+    "files": [
+      "dist"
+    ],
+    "repository": "git@github.com:zhaofinger/useTaroNavBarStyle.git",
+    "author": "zhaofinger <zhaohaibo1994@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+      "build": "parcel build ./src/index.ts",
+      "prepublishOnly": "npm run build"
+    },
+    "devDependencies": {
+      "@types/react": "^16.9.41",
+      "parcel": "^2.0.0-beta.1",
+      "typescript": "^3.9.6",
+      "@tarojs/taro": "^3.0.2",
+      "react": "^16.13.1"
+    },
+    "peerDependencies": {
+      "@tarojs/taro": "^3.0.2",
+      "react": "^16.13.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
