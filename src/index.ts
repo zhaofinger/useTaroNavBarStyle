@@ -156,7 +156,7 @@ const getNavStyle = (systemInfo: ISystemInfo | null) => {
 
 let systemInfo = getSystemInfo();
 
-const useNavBarStyle = () => {
+export default function useNavBarStyle() {
   const [navStyle, setNavStyle] = useState(getNavStyle(systemInfo));
 
   useDidShow(() => {
@@ -169,4 +169,3 @@ const useNavBarStyle = () => {
   return navStyle;
 };
 
-export default useNavBarStyle;
